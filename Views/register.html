@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-rel="stylesheet" />-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
 integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -19,7 +17,7 @@ integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWu
     <header>
         <section class="encabezado">
             <section class="logo">
-                <img src="/static/images/logo-mercado-liebre.svg" alt="Logo">
+                <a href="/"><img src="/static/images/logo-mercado-liebre.svg" alt="Logo"></a>
             </section>
             <section class="busqueda">
                 <input type="search" class="search" placeholder="Buscar productos..."/><button id="search"><i class="fas fa-search"></i></button>                
@@ -63,7 +61,7 @@ integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWu
                     <p><input class="campo-input" type="text" name="domicilio" placeholder="Ingrese su domicilio" required></p>
                 <label for="foto-usuario" class="label">Foto de usuario</label>
                 <div class="foto">
-                    <p><input type="file" name="foto-usuario"></p>
+                    <p><input type="file" name="foto-usuario" accept=".png, .jpg"></p>
                 </div>
                 
                 <label for="usuario" class="label">Nombre de usuario *</label>
@@ -73,7 +71,7 @@ integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWu
                 <label for="password" class="label">Confirme su contraseña *</label>
                     <p><input class="campo-input" type="password" name="password" placeholder="Confirme su contraseña" required minlength=6></p>
                 
-                <label for="perfil" class="label">Perfil de usuario</label>
+                <label for="perfil" class="label">Perfil de usuario *</label>
                 <div class="perfil">
                     <p><input type="radio" name="perfil" value="Comprador" required> Comprador</p>
                     <p><input type="radio" name="perfil" value="Vendedor" required> Vendedor</p>
