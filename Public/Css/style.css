@@ -13,6 +13,9 @@ body{
     font-size: 12px;
     margin-top: 132px;
 }
+main{
+    padding-bottom:50px;
+}
 header{
     background-color: #EAC926;
     padding: 0 0 5px 0;
@@ -98,13 +101,9 @@ main{
     width:100%;
     background-color: #ebebeb;
 }
-.ultima-visita{
+.ultima-visita, .ofertas{
     padding-top: 2%;
-    font-size: 1rem;
-    text-align: center;
-    width:80vw;
-}
-.ofertas{
+    padding-bottom: 1%;
     font-size: 1rem;
     text-align: center;
     width:80vw;
@@ -116,8 +115,11 @@ main{
     align-items:center;
     width: 100vw;
 }
+.vista-productos img{
+    width: 150px;
+}
 .producto{
-    margin: 10px;
+    margin: 15px;
     display: inline-block;
     padding: 10px;
     border: 1px solid #ebebeb;
@@ -126,7 +128,7 @@ main{
 }
 .desc-producto{
     border-top: 1px solid #ebebeb;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     background-color: white;
 }
 .precios-producto{
@@ -144,8 +146,8 @@ main{
     font-size: 1.rem;
     color:green;
 }
-#descripcion{
-    font-size: .7rem;
+.descripcion{
+    font-size: .8rem;
     margin-top: 4px;
 }
 .desc-producto p i{
@@ -159,23 +161,26 @@ main{
     color: #39b54a;
     border-radius: 50%;
     position: relative;
-    right: -75%;
-    top: -25px;
+    right: -80%;
+    top: -15px;
+    transition: 450ms;
 }
+
 .pie{
     background-color: #ebebeb;
     color:#666;
     border: 10px solid;
     border-color: #666;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
-#pie{
-    background-color: #ebebeb;
+.texto-pie1, .texto-pie2{
+    padding: 10px;
 }
 footer i{
     font-size: 2em;
     background-color: #ebebeb;
+    color: #0022AA;
 }
 /*----------------------------------------------------------------*/
 
@@ -187,7 +192,7 @@ footer i{
 
 
 .campo-input{
-    width:40vw;
+    width:50vw;
     padding:10px;
     border:0px;
     border-radius: 5px;
@@ -196,13 +201,18 @@ footer i{
     font-size: .6rem;
 }
 .button-login{
-    width:15vw;
+    width:60px;
     padding:5px;
-    border:0px;
     border-radius: 5px;
+    border:5px solid #fff;
+    transition: background-color,
+     color, 400ms;
+}
+.button-login:hover{
+
     background-color:#0044AA;
     color: #ebebeb;
-    
+    border-color:#0044AA;
 }
 /*----------------------------------------------------------------*/
 
@@ -247,22 +257,24 @@ form h4{
     
 }
 .button-registro{
-    width:25%;
+    width:60px;
     padding:5px;
     border:0px;
     border-radius: 5px;
+    border:5px solid #fff;
+    transition: background-color,
+     color, 400ms;
+}
+.button-registro:hover{
     background-color:#0044AA;
     color: #ebebeb;
+    border-color:#0044AA;
 }
-
-
-
-
 @media (max-width: 360px){
     .navbar{
         display: none;       
     }
-    #descripcion{
+    .descripcion{
         display: none;       
     }
 }
@@ -315,17 +327,45 @@ form h4{
     body{
         margin-top: 167px;
     }
+    .search, #search{
+        padding: 10px;
+    }
+    .ultima-visita, .ofertas{
+        font-size: 1.3rem;
+    }
     .producto{
         width: 20vw;
+        transition:450ms;
     }
+    .producto:hover{
+        box-shadow: 0 0 16px 12px rgba(0,0,0,0.74);
+    }
+    .desc-producto i:hover{
+        transform: rotateZ(-90deg);
+    }
+    .descripcion{
+        color:#FFF;
+        transition: 200ms;
+    }
+    .descripcion:hover{
+        color: #666;
+        
+    }
+
     .navbar a{
         font-size: .8rem;
     }
     .campo-input{
-        width: 100%;
+        width: 25vw;
     }
     .label{
         font-size: 1.1rem;
     }
-    
+    .pie{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .texto-pie1{
+      width:33%;
+    }
 }
