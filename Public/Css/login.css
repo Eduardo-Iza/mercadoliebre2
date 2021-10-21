@@ -1,0 +1,170 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #ebebeb;
+    font-size: 12px;
+    
+}
+header{
+    background-color: #EAC926;
+    padding: 0 0 5px 0;
+   
+}
+ul, li{
+    list-style: none;
+    padding: 0 5px;
+    font-size: 1.5vw;
+}
+.navbar a {
+    color: #000000;
+    font-weight: bold;
+}
+.encabezado{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+
+}
+.logo{
+    width:50%;
+    padding: 1%;
+}
+.busqueda{
+    width: 50%;
+    
+}
+
+.search {
+    background: white;
+    border: none;
+    color: #666;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    
+}
+#search{
+    background: white;
+    border: none;
+    color: #666;
+    text-align: center;
+    font-size: .8rem;
+    padding: 5px;
+    border-radius: 0 5px 5px 0;
+    
+}
+
+.tituloCompraEnCuotas{
+    text-align: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+.titulo1{
+    display: inline;
+    text-align: center;
+}
+.burger-menu{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px                 ;
+    padding: 5px;
+    width: 35px;
+    text-align: center;
+    line-height: 25px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*-------------------------*/
+
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.campo-input{
+    width:40vw;
+    padding:10px;
+    border:0px;
+    border-radius: 5px;
+    color: #666;
+    margin-bottom: 30px;
+}
+.button{
+    width:100%;
+    padding:10px;
+    border:0px;
+    border-radius: 5px;
+    background-color:#0044AA;
+    color: #ebebeb;
+}
+
+/*-----------------------*/
+
+@media (max-width: 360px){
+    .navbar{
+        display: none;       
+    }
+    
+}
+
+@media (min-width: 361px){
+    .burger-menu{
+        display: none;
+    }
+    .encabezado{
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+     .logo,  .tituloCompraEnCuotas{
+         width: 40vw;
+    }
+    .search{
+        width: 30vw;
+    }
+    .tituloCompraEnCuotas{
+        font-size: 1.2vw;
+        padding-left: 1px;
+    }
+     .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items:center;
+        justify-content: space-between;
+        width: 100vw;
+        padding-bottom: 5px;
+    }
+
+     .nav1, .nav2{
+        display:flex;
+    }
+    .navbar a{
+        font-size: .4rem;
+    }
+
+}
+
+@media (min-width: 769px){
+    
+    .navbar a{
+        font-size: .8rem;
+    }
+}
