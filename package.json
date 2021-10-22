@@ -12,13 +12,12 @@
   },
   "keywords": [],
   "author": "",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
-
-  "license": "ISC",
+    "license": "ISC",
   "bugs": {
     "url": "https://github.com/Eduardo-Iza/mercadoliebre/issues"
   },
-  "homepage": "https://github.com/Eduardo-Iza/mercadoliebre#readme"
+  "homepage": "https://github.com/Eduardo-Iza/mercadoliebre#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
