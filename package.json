@@ -1,8 +1,8 @@
 {
-  "name": "mercadoLiebre",
+  "name": "mercadoliebre",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "start":"node app.js"
    },
