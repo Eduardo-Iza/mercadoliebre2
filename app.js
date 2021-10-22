@@ -1,9 +1,14 @@
 const path = require('path');
 const express = require('express');
 const server = express();
+const port = process.env.PORT || 3000;
 
 server.use ("/static", express.static("public"));
-server.listen(3000, () => {
+server.set("view engine", "ejs");
+server.set("views", path.resolve(__dirname, "views"));
+
+
+server.listen(port, () => {
      console.log('Servidor iniciado en el puerto 3000')
     });
 server.get('/', (req, res) => {
@@ -14,4 +19,4 @@ server.get('/login', (req, res) => {
 });
 server.get('/register', (req, res) => {
         res.sendFile(path.join(__dirname, '/views/register.html'));
-});
+})
