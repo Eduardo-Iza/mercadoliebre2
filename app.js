@@ -12,7 +12,7 @@ server.listen(port, () => {
      console.log('Servidor iniciado en el puerto 3000')
     });
 server.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, './views/home.html'));
+        res.sendFile(path.resolve(__dirname, '/views/home.html'));
 });
 server.get('/login', (req, res) => {
         res.sendFile(path.join(__dirname, '/views/login.html'));
