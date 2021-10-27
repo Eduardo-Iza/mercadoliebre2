@@ -4,8 +4,7 @@ const server = express();
 const port = process.env.PORT || 3000;
 
 server.use ("/static", express.static("public"));
-/*server.set("view engine", "ejs");
-server.set("views", path.resolve(__dirname, "views"));*/
+server.set("views", path.resolve(__dirname, "views"));
 
 
 server.listen(port, () => {
