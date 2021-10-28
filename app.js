@@ -1,15 +1,22 @@
 const express = require('express');
-const server = express();
+const app = express();
 const path = require('path');
 const port = process.env.PORT || 3000;
+const publicPath = path.join(__dirname, 'public');
 
-server.use ("/static", express.static("public"));
-server.set("views",path.join(path.dirname(__dirname,"views")));
+app.use ("/static", express.static(publicPath));
+app.set("views",path.join(path.dirname(__dirname,"views")));
 
-server.listen(port, () =>{
+app.listen(port, () =>{
     console.log("port 3000")
 });
-server.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,"views/home.html"));
+app.get('/', (req,res) => {
+    res.sendFile(path.join(__dirname,'views/home.html'));
+    
 });
-
+app.get('/login', (req,res) => {
+    res.sendFile(path.join(__dirname,'views/login.html'));
+});
+app.get('/register', (req,res) => {
+    res.sendFile(path.join(__dirname,'views/register.html'));
+});
