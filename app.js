@@ -2,6 +2,7 @@ const express = require('express');
 const server = express();
 const path = require('path');
 const port = process.env.PORT || 3000;
+
 server.use ("/static", express.static("public"));
 server.set("views",path.join(path.dirname(__dirname,"views")));
 
