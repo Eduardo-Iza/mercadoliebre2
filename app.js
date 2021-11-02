@@ -11,12 +11,12 @@ app.use ("/static", express.static('public'));
 /*app.set("views",path.join(path.dirname(__dirname,"views")));*/
 
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname,'./views/home'));
+    res.sendFile(path.join(__dirname,'/views/home.html'));
     
 });
 app.get('/login', (req,res) => {
-    res.sendFile(path.join(__dirname,'./views/login'));
+    res.sendFile(path.join(__dirname,'/views/login.html'));
 });
 app.get('/register', (req,res) => {
-    res.sendFile(path.join(__dirname,'./views/register'));
+    res.sendFile(path.join(__dirname,'/views/register.html'));
 });
